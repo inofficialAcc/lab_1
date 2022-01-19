@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  json_server:
+    image: node
+    working_dir: /json_server
+    volumes:
+    - ./:/json_server
+    ports:
+    - 8000:3000
+    command: bash script.sh
